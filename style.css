@@ -1,0 +1,80 @@
+#menu ul {
+   padding:0px;
+   margin:0px;
+   background-color:#EDEDED;
+   list-style:none;
+}
+
+#menu ul li { 
+    display: inline;
+}
+
+#menu ul li a {
+   padding: 2px 10px;
+   display: inline-block;
+
+   /* visual do link */
+   background-color:#EDEDED;
+   color: #333;
+   text-decoration: none;
+   border-bottom:3px solid #EDEDED;
+}
+
+#menu ul li a:hover {
+   background-color:#D6D6D6;
+   color: #6D6D6D;
+   border-bottom:3px solid #EA0000;
+}   
+.login-content {
+    background: #dfdfdf;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+    color: #028b89;
+
+}
+#cadastro {
+    margin-left:35%; /* Metade do valor da Largura */
+    margin-top:8%; /* Metade da valor da Altura */
+    position:absolute;
+}
+input[type=text]{   
+    border-radius:12px;
+    box-shadow: 1px 1px 2px #00c;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #fff; 
+    border:2px solid #fff;
+    height: 35px;
+}
+input[type=email]{   
+    border-radius:12px;
+    box-shadow: 1px 1px 2px #00c;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #fff; 
+    border:2px solid #fff;
+    height: 35px;
+}
+input[type=password]{   
+    border-radius:12px;
+    box-shadow: 1px 1px 2px #00c;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #fff; 
+    border:2px solid #fff;
+    height: 35px;
+}
+.button{
+  background-color: #028b89;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 10px 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
