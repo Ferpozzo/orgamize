@@ -25,7 +25,7 @@
    color: #6D6D6D;
    border-bottom:3px solid #EA0000;
 }   
-.cadastro {
+.login {
     background: #dfdfdf;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -35,7 +35,7 @@
     color: #028b89;
 
 }
-.cadastro button a :hover {
+.login button a :hover {
     background: #dfdfdf;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -47,19 +47,10 @@
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
-#cadastro {
+#login {
     margin-left:35%; /* Metade do valor da Largura */
     margin-top:8%; /* Metade da valor da Altura */
     position:absolute;
-}
-input[type=text]{   
-    border-radius:12px;
-    box-shadow: 1px 1px 2px #00c;    
-    -moz-box-shadow: 1px 1px 2px #333333;
-    -webkit-box-shadow: 1px 1px 2px #333333;
-    background: #fff; 
-    border:2px solid #fff;
-    height: 35px;
 }
 input[type=email]{   
     border-radius:12px;
