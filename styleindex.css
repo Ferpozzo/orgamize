@@ -1,6 +1,4 @@
-body{
-    background-color: #f8f8f8;
-}
+
 .login {
     background: #fff;
     -webkit-border-radius: 15px;
@@ -112,3 +110,40 @@ input[type=password]{
       float: none;
     }
   }
+  /* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  /*background-color: #f8f8f8;*/
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.conteudoTab {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#Lancamentos {background-color: green;}
+#Relatorio {background-color: blue;}
+#Metas {background-color: orange;}

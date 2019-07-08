@@ -1,20 +1,74 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Organomize</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styleindex.css" />
-    <script src="/script/main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Organomize</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styleindex.css" />
 </head>
+
 <body>
-    <div class="cabecalho">
+  <button class="tablink" onclick="abrirpagina('Home', this, 'red')">Visão geral</button>
+  <button class="tablink" onclick="abrirpagina('Lancamentos', this, 'green')" id="padraoAberto">Lançamentos</button>
+  <button class="tablink" onclick="abrirpagina('Relatorio', this, 'blue')">Relatórios</button>
+  <button class="tablink" onclick="abrirpagina('Metas', this, 'orange')">Metas</button>
+
+  <div id="Home" class="conteudoTab">
+    <h3>Visão geral</h3>
+    <p>Escreva qualquer merda aqui</p>
+  </div>
+
+  <div id="Lancamentos" class="conteudoTab">
+      <h3>Lançamentos</h3>
+      <p>Bla bla bla</p>
+  </div>
+
+  <div id="Relatorio" class="conteudoTab">
+      <h3>Relatório</h3>
+      <p>Relatórios aqui</p>
+    
+  </div>
+
+  <div id="Metas" class="conteudoTab">
+    <h3>Metas</h3>
+    <p>Bla bla bla</p>
+  </div>
+  <!--
+      <div class="cabecalho">
         <a href="index.html" class="logo">Orgamize</a>
         <div class="cabecalho_direita">
           <a href="Cadastro.html">Cadastre-se</a>
           <a class="ativo" href="login.html">Sair</a>
         </div>
       </div>
+    -->
+  <script>
+    function abrirpagina(nomePagina, elemento, cor) {
+      // Esconde todo o conteúdo da classe ="conteudoTab" por padrão */
+      var i, conteudoTab, tablinks;
+      conteudoTab = document.getElementsByClassName("conteudoTab");
+      for (i = 0; i < conteudoTab.length; i++) {
+        conteudoTab[i].style.display = "none";
+      }
+
+      // Remove a cor de fundo de todos os Tabs e Botões
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+
+      // Mostra o conteudo específico de cada Tab
+      document.getElementById(nomePagina).style.display = "block";
+
+      // Adiciona a cor específica do botão usado para abrir o conteúdo do Tab
+      elemento.style.backgroundColor = cor;
+    }
+
+    // Pega o elemento com id="padraoAberto" e simula um click
+    document.getElementById("padraoAberto").click();
+  </script>
 </body>
+
 </html>
