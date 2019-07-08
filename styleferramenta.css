@@ -1,29 +1,44 @@
-#menu ul {
-    padding:0px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
-}
-#menu ul li { display: inline; }
-#menu ul li a {
-    padding: 2px 10px;
-    display: inline-block;
-
-    /* visual do link */
-    background-color:#EDEDED;
-    color: #333;
+.cabecalho {
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+  .cabecalho a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
     text-decoration: none;
-    border-bottom:3px solid #EDEDED;
-    
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+.cabecalho a.logo {
+    font-size: 25px;
+    font-weight: bold;
 }
-#menu ul li a:hover {
-    background-color:#D6D6D6;
-    color: #6D6D6D;
-    border-bottom:3px solid rgb(47, 138, 95);
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-     transform: scale(1.2);
-}
-body{
-
-}
+.cabecalho a:hover {
+    background-color: #a2a8a8;
+    color:black;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+     transform: scale(1.05);
+  }
+  .cabecalho a.ativo {
+    background-color: #13b15f;
+    color: white;
+  }
+.cabecalho_direita {
+    float: right;
+  }
+  
+/* media adicionada pra se tornar responsivo*/
+  @media screen and (max-width: 500px) {
+    .cabecalho a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .cabecalho_direita {
+      float: none;
+    }
+  }

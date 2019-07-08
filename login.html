@@ -12,7 +12,7 @@
 <body>
   <!--Login-->
   <div id="login" class="login">
-    <form method="POST" action="">
+    <form method="POST" action="inicio.html">
       <font size="5">
         <h1>Login</h1>
       </font>
@@ -31,23 +31,23 @@
       </p>
 
       <p>
-        <button class="button" type="submit" value="Entrar" onclick="verificasenha()"> Entrar</button>
+        <button class="button" type="submit" value="Entrar" onclick="verificasenha()">Entrar</button>
       </p>
     </form>
     <p class="link" style="color:#000">
-      Não tem uma conta? <br><br>
+      <label>Não tem uma conta?</label> <br><br>
       <a href="Cadastro.html"><button class="button">Cadastre-se </button></a>
     </p>
   </div>
 
   <script>
-    function verificasenha() {
+  /* function verificasenha() {
       var senha = document.getElementById('senha_log').value
       var tam = document.getElementById('senhacurta')
       if (senha.length < 6) {
         tam.innerHTML = 'Senha muito curta!'
       }
-    }</script>
+    }*/</script>
 </body>
 
 </html>
