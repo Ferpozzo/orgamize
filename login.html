@@ -1,36 +1,53 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
-<head>
-   <meta charset="utf-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Seja bem vindo ao Organomize!</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" media="screen" href="stylelogin.css" />
-   <script src="/script/main.js"></script>
-</head>
-<body>
-      <!--Login-->
-      <div id="login" class="login">
-            <form method="POST" action=""> 
-              <font size="5"><h1>Login</h1></font> 
-              <p> 
-                <label for="email_cad">Seu e-mail</label><br>
-                <input id="email_cad" name="email_cad" required="required" type="email" size="40%"/> 
-              </p>
-               
-              <p> 
-                <label for="senha_cad">Sua senha</label><br>
-                <input id="senha_cad" name="senha_cad" required="required" type="password" size="40%"/>
-              </p>
 
-              <p> 
-                <button class="button" type="submit" value="Entrar"> Entrar</button>
-              </p>
-            </form>
-            <p class="link" style="color:#000">  
-              Não tem uma conta? <br><br>
-              <a href="Cadastro.html"><button class="button">Cadastre-se </button></a>
-            </p>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Seja bem vindo ao Organomize!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylelogin.css" />
+</head>
+
+<body>
+  <!--Login-->
+  <div id="login" class="login">
+    <form method="POST" action="">
+      <font size="5">
+        <h1>Login</h1>
+      </font>
+      <p>
+        <label for="email_log">Seu e-mail</label><br>
+        <input id="email_log" name="email_log" required="required" type="email" size="40%" />
+      </p>
+
+      <p>
+        <label for="senha_log">Sua senha</label><br>
+        <input id="senha_log" name="senha_log" required="required" type="password" size="40%"
+          onblur="verificasenha()" />
+          <div id="senhacurta">
+
           </div>
+      </p>
+
+      <p>
+        <button class="button" type="submit" value="Entrar" onclick="verificasenha()"> Entrar</button>
+      </p>
+    </form>
+    <p class="link" style="color:#000">
+      Não tem uma conta? <br><br>
+      <a href="Cadastro.html"><button class="button">Cadastre-se </button></a>
+    </p>
+  </div>
+
+  <script>
+    function verificasenha() {
+      var senha = document.getElementById('senha_log').value
+      var tam = document.getElementById('senhacurta')
+      if (senha.length < 6) {
+        tam.innerHTML = 'Senha muito curta!'
+      }
+    }</script>
 </body>
+
 </html>

@@ -6,7 +6,6 @@
    <title>Seja bem vindo ao Organomize!</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-   <script src="/script/main.js"></script>
 </head>
 <body>
       <!--FORMULÁRIO DE CADASTRO-->
@@ -26,16 +25,22 @@
                
               <p> 
                 <label for="senha_cad">Sua senha</label><br>
-                <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Minimo 6 caracteres" size="40%"/>
+                <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Minimo 6 caracteres" size="40%" onblur="verificatam()"/>
+                <div id="senhacurta" style="color: red">
+
+                </div>
               </p>
 
               <p> 
                 <label for="confirmar_senha_cad">Confirmar senha</label><br>
-                <input id="confirmar_senha_cad" name="confirmar_senha_cad" required="required" type="password" placeholder="Repita a senha" size="40%"/>
+                <input id="confirmar_senha_cad" name="confirmar_senha_cad" required="required" type="password" placeholder="Repita a senha" size="40%" onblur="verificaigual()"/>
+                <div id="senhadif" style="color: red">
+
+                </div>
               </p>
                
               <p> 
-                <button class="button" type="submit" value="Cadastrar"> Cadastrar</button>
+                <button class="button" type="submit" value="Cadastrar" onclick="verificatam" onclick="verificaigual()"> Cadastrar</button>
               </p>
             </form>
             <p class="link" style="color:#000">  
@@ -43,5 +48,30 @@
               <a href="login.html"><button class="button">Ir para Login </button></a>
             </p>
           </div>
+          <script>
+              function verificatam() {
+                var senha = document.getElementById('senha_cad').value
+                var tam = document.getElementById('senhacurta')
+                if (senha.length < 6) {
+                  tam.innerHTML = 'Senha muito curta!'
+                }else{
+                  tam.innerHTML = ''
+                }
+              }
+                function verificaigual() {
+                var senha = document.getElementById('senha_cad').value
+                var confirm = document.getElementById('confirma_senha_cad')
+                var dif = document.getElementById('senhadif')
+                if (confirm != '') {
+                  if(confirm === senha){
+                    dif.innerHTML = ''
+                  }else{
+                    dif.innerHTML = 'Senha diferente'
+                }
+              }else{
+                dif.innerHTML = 'Confirme a senha'
+              }
+            }
+              </script>
 </body>
 </html>

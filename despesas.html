@@ -6,7 +6,6 @@
     <title>Organomize</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styleferramenta.css" />
-    <script src="/script/main.js"></script>
 </head>
 <body>
     <h1>Orgamize</h1>
@@ -19,7 +18,17 @@
             </ul>
         </nav>
         <div>
-            <p>Olá</p>
+            <p>Despesa</p>
+            <input type="text" placeholder="0,00" id="iddespesa">
+            <input type="button" value="Salvar despesa" id="btsalvardespesa" onclick="armazenadespesa()">
         </div>
+        <div>
+            <p>Despesa</p>
+        </div>
+        <script type="text/javascript">
+            function armazenadespesa(){
+         var despesa = document.querySelector('#iddespesa').value;
+         alert(despesa);
+     } </script>
 </body>
 </html>
