@@ -29,8 +29,8 @@ label{
     transform: scale(1.2);
 }
 #login {
-    margin-left:35%; /* Metade do valor da Largura */
-    margin-top:8%; /* Metade da valor da Altura */
+    margin-left:35%; 
+    margin-top:8%; 
     position:absolute;
     font-family: sans-serif;
 }
@@ -63,6 +63,7 @@ input[type=password]{
   font-size: 16px;
   min-width: 190px;
   display: inline-block;
+  opacity: 0.8;
 }
 .cabecalho {
     overflow: hidden;
@@ -81,10 +82,12 @@ input[type=password]{
     border-radius: 4px;
   }
 .cabecalho a.logo {
+  background-color: #13b15f !important;
     font-size: 25px;
     font-weight: bold;
+    opacity: 0.8;
 }
-.cabecalho a:hover {
+.cabecalho a:hover{
     background-color: #a2a8a8;
     color:#fff;
     -webkit-transform: scale(1.05);
@@ -94,6 +97,7 @@ input[type=password]{
   .cabecalho a.ativo {
     background-color: #13b15f;
     color: white;
+    opacity: 0.8;
   }
 .cabecalho_direita {
     float: right;
@@ -110,15 +114,13 @@ input[type=password]{
       float: none;
     }
   }
-  /* Set height of body and the document to 100% to enable "full page tabs" */
+
 body, html {
   height: 100%;
   margin: 0;
   font-family: sans-serif;
   /*background-color: #f8f8f8;*/
 }
-
-/* Style tab links */
 .tablink {
   background-color: #0a914b;
   color: #dfdfdf;
@@ -136,16 +138,12 @@ body, html {
 .tablink:hover {
  color: rgb(255, 255, 255);
 }
-
-/* Style the tab content (and add height:100% for full page content) */
 .conteudoTab {
-  color: white;
+  color: #f5f5ff;
   display: none;
   padding: 100px 20px;
   height: 100%;
 }
-
-<<<<<<< HEAD
 #Home {background-color:#f5f5ff;}
 #Lancamentos {background-color: #f5f5ff;}
 #Relatorio {background-color: #f5f5ff;}
@@ -156,13 +154,6 @@ img{
   width: 153px;
   height: 58px;
 }
-=======
-#Home {background-color:rgb(255, 245, 245);}
-#Lancamentos {background-color: rgb(245, 255, 245);}
-#Relatorio {background-color: rgb(245, 245, 255);}
-#Metas {background-color: rgb(255, 255, 210);}
->>>>>>> feb635db178bfdd917aa285f843e70609102b533
-
 .Alertas {
   background: #fdfcfc;
   -webkit-border-radius: 15px;
@@ -184,6 +175,7 @@ img{
   border-color: rgb(67, 197, 50);
   width: 90%;
   text-align: center;
+  text-transform: capitalize;
 }
 
 #alerta1 {
@@ -226,25 +218,41 @@ td, th {
   border: 1px solid #dddddd;
   text-align: left;
 }
-
-
-/* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
-
-/* Container for skill bars */
 .container {
-  width: 80%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  width: 80%; 
+  background-color: #ddd; 
 }
 
 .skills {
-  text-align: right ; /* Right-align text */
-  padding-top: 3px; /* Add top padding */
-  padding-bottom: 3px; /* Add bottom padding */
-  color: #333; /* White text color */
+  text-align: right ; 
+  padding-top: 3px; 
+  padding-bottom: 3px; 
+  color: #333;
 }
 
-.diversos {width: 30%; background-color: #4CAF50;} /* Green */
-.medico {width: 15%; background-color: #4CAF50;} /* Blue */
-.aluguel {width: 35%; background-color: #2196F3;} /* Green */
-.transporte {width: 10%; background-color: #2196F3;} /* Blue */
+.diversos {width: 30%; background-color: #4CAF50;} 
+.medico {width: 15%; background-color: #4CAF50;} 
+.aluguel {width: 35%; background-color: #2196F3;} 
+.transporte {width: 10%; background-color: #2196F3;} 
+
+img{
+  width: auto;
+  height: auto;
+  
+}
+h3{
+  padding: 7%;
+  font-family: sans-serif;
+  color: #13b15f;
+  font-size: 43px;
+}
+#h31{
+  text-align: left;
+}
+#h32{
+  text-align: right;
+}
+#h33{
+text-align: center;
+}
