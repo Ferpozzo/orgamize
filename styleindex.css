@@ -114,25 +114,27 @@ input[type=password]{
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial;
+  font-family: sans-serif;
   /*background-color: #f8f8f8;*/
 }
 
 /* Style tab links */
 .tablink {
-  background-color: #555;
-  color: white;
-  float: left;
+  background-color: #0a914b;
+  color: #dfdfdf;
+  float: right;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
   width: 25%;
+  opacity: 0.8;
 }
 
 .tablink:hover {
-  background-color: #777;
+ color: rgb(255, 255, 255);
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -143,10 +145,16 @@ body, html {
   height: 100%;
 }
 
-#Home {background-color:rgb(255, 245, 245);}
-#Lancamentos {background-color: rgb(245, 255, 245);}
-#Relatorio {background-color: rgb(245, 245, 255);}
-#Metas {background-color: lightgreen;}
+#Home {background-color:#f5f5ff;}
+#Lancamentos {background-color: #f5f5ff;}
+#Relatorio {background-color: #f5f5ff;}
+#Metas {background-color: #f5f5ff;}
+img{
+  opacity: 0.8;
+  padding: 0%;
+  width: 153px;
+  height: 58px;
+}
 
 .Alertas {
   background: #fdfcfc;
