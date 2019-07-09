@@ -146,7 +146,7 @@ body, html {
 #Home {background-color:rgb(255, 245, 245);}
 #Lancamentos {background-color: rgb(245, 255, 245);}
 #Relatorio {background-color: rgb(245, 245, 255);}
-#Metas {background-color: lightgreen;}
+#Metas {background-color: rgb(255, 255, 210);}
 
 .Alertas {
   background: #fdfcfc;
@@ -157,6 +157,17 @@ body, html {
   border-width: 1px;
   border-color: rgb(67, 197, 50);
   width: 30%;
+  text-align: center;
+}
+.tabelas {
+  background: #fdfcfc;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: rgb(67, 197, 50);
+  width: 90%;
   text-align: center;
 }
 
@@ -176,10 +187,20 @@ body, html {
   position:absolute;
 }
 #alerta4 {
- margin-left:52%;
- margin-top:20%;
- position:absolute;
-}
+  margin-left:52%;
+  margin-top:20%;
+  position:absolute;
+ }
+ #areceber {
+  margin-left:3%;
+  margin-top:1%;
+  position:absolute;
+ }
+ #apagar {
+  margin-left:3%;
+  margin-top:1%;
+  position:absolute;
+ }
 
 table {
   font-family: arial, sans-serif;
@@ -202,13 +223,13 @@ td, th {
 }
 
 .skills {
-  text-align: right; /* Right-align text */
+  text-align: right ; /* Right-align text */
   padding-top: 3px; /* Add top padding */
   padding-bottom: 3px; /* Add bottom padding */
-  color: #eee; /* White text color */
+  color: #333; /* White text color */
 }
 
-.gastosgerais {width: 30%; background-color: #4CAF50;} /* Green */
-.medico {width: 15%; background-color: #2196F3;} /* Blue */
-.aluguel {width: 35%; background-color: #4CAF50;} /* Green */
+.diversos {width: 30%; background-color: #4CAF50;} /* Green */
+.medico {width: 15%; background-color: #4CAF50;} /* Blue */
+.aluguel {width: 35%; background-color: #2196F3;} /* Green */
 .transporte {width: 10%; background-color: #2196F3;} /* Blue */
