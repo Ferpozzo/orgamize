@@ -21,58 +21,47 @@
         <h1>Histórico</h1>
       </font>
       <table style="margin: auto">
-        <thead style="background-color: #b1b1b1">
-          <tr >
-          <th>Data</th>
-          <th>Pagador</th>
-          <th>Tipo</th>
-          <th>Descrição</th>
-          <th>Valor</th>
-        </tr>
-        </thead>
-        
-        <tr style="background-color: #efefef">
-          <td>05/08/19</td>
-          <td>Salário</td>
-          <td>Pago</td>
-          <td>Salário</td>
-          <td>R$ 2.000,00</td>
-        </tr>
-        <tr style="background-color: #efefef">
-          <td>05/08/19</td>
-          <td>aluguel apartamento</td>
-          <td>Recebido</td>
-          <td>apartamento do centro</td>
-          <td>R$ 1.200,00</td>
-        </tr>
-        <tr style="background-color: #efefef">
-          <td>05/07/19</td>
-          <td>Salário</td>
-          <td>Pago</td>
-          <td>Salário</td>
-          <td>R$ 2.000,00</td>
-        </tr>
-        <tr style="background-color: #efefef">
-          <td>05/07/19</td>
-          <td>aluguel apartamento</td>
-          <td>Recebido</td>
-          <td>apartamento do centro</td>
-          <td>R$ 1.200,00</td>
-        </tr>
-        <tr style="background-color: #efefef">
-          <td>05/06/19</td>
-          <td>Salário</td>
-          <td>Pago</td>
-          <td>Salário</td>
-          <td>R$ 2.000,00</td>
-        </tr>
-        <tr style="background-color: #efefef">
-          <td>05/06/19</td>
-          <td>aluguel apartamento</td>
-          <td>Recebido</td>
-          <td>apartamento do centro</td>
-          <td>R$ 1.200,00</td>
-        </tr>
+        <tbody id="historico">
+          <thead>
+            <tr>
+              <th style="background-color: #b1b1b1">Data</th>
+              <th style="background-color: #b1b1b1">Nome</th>
+              <th style="background-color: #b1b1b1">Tipo</th>
+              <th style="background-color: #b1b1b1">Descrição</th>
+              <th style="background-color: #b1b1b1">Valor R$</th>
+            </tr>
+          </thead>
+
+          <tr style="background-color: #efefef">
+            <td>2019-07-03</td>
+            <td>Salário</td>
+            <td>A receber</td>
+            <td>Salário</td>
+            <td>2000.00</td>
+          </tr>
+          <tr style="background-color: #efefef">
+            <td>2019-07-03</td>
+            <td>aluguel apartamento</td>
+            <td>A receber</td>
+            <td>apartamento do centro</td>
+            <td>1200.00</td>
+          </tr>
+          <tr style="background-color: #efefef">
+            <td>2019-07-03</td>
+            <td>Energia</td>
+            <td>A pagar</td>
+            <td>Conta da energia</td>
+            <td>150.00</td>
+          </tr>
+          <tr style="background-color: #efefef">
+            <td>2019-07-03</td>
+            <td>Internet</td>
+            <td>A pagar</td>
+            <td>Conta da internet</td>
+            <td>120.00</td>
+          </tr>
+        </tbody>
+
       </table>
     </div>
   </div>
@@ -88,11 +77,8 @@
           <font size="6" face="arial"><b>R$ 0.00<b></font> <br><br>
       </div>
       <a onclick="adicionaSaldo()"><button class="button">Atualizar saldo</button></a>
-      <a href="#"><button class="button">Subtrair saldo</button></a>
       </p>
     </div>
-
-
     <div id="alerta2" class="Alertas">
       <font size="4" color="#2b2b2b">
         <h1>Gastos</h1>
@@ -114,8 +100,6 @@
 
         </p>
     </div>
-
-
     <div id="alerta3" class="Alertas">
       <font size="3" color="#2b2b2b">
         <h1>A pagar</h1>
@@ -161,6 +145,9 @@
       <p class="link" style="color:#000">
       </p>
     </div>
+    <div>
+    </div>
+    <a href="index.html"><input type="button" class="button" id="sair" value="Sair" onclick="querSair()" style="background-color: rgb(184, 12, 12)"></a>
   </div>
 
   <div id="Receber" class="conteudoTab">
@@ -170,37 +157,38 @@
       </font>
       <table style="margin: auto">
         <tbody id="receberTabela">
-          <tr style="background-color: #b1b1b1">
-            <th>Data</th>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Valor</th>
+          <tr id="tabCabecalho">
+            <th style="background-color: #b1b1b1">Data</th>
+            <th style="background-color: #b1b1b1">Nome</th>
+            <th style="background-color: #b1b1b1">Descrição</th>
+            <th style="background-color: #b1b1b1">Valor R$</th>
           </tr>
           <tr style="background-color: #efefef">
-            <td>05/08/19</td>
+            <td>2019-07-03</td>
             <td>Salário</td>
             <td>Salário</td>
-            <td>R$ 2.000,00</td>
+            <td class="total">2000.00</td>
           </tr>
           <tr style="background-color: #efefef">
-            <td>05/08/19</td>
+            <td>2019-07-03</td>
             <td>aluguel apartamento</td>
             <td>apartamento do centro</td>
-            <td>R$ 1.200,00</td>
+            <td class="total">1200.00</td>
           </tr>
         </tbody>
       </table>
       <p class="link" style="color:#000">
-        <div>
-          <b>Data:</b> <input type="date" class="txtreceber" name="data">
-          Conta: <input type="text" class="txtreceber" name="nome">
-          Descrição: <input type="text" class="txtreceber" name="descricao">
-          Valor: <input type="number" class="txtreceber" name="valor">
-          <a href="#"><button class="button" style="float: right" onclick="return processar('receberTabela')">Adicionar
-              crédito a receber </button></a>
-        </div>
-      </p>
+        <b>Data:</b> <input type="date" class="txtreceber" name="data">
+        Conta: <input type="text" class="txtreceber" name="nome">
+        Descrição: <input type="text" class="txtreceber" name="descricao">
+        Valor: <input type="number" class="txtreceber" name="valor" id="valor">
+        <a href="#">
+          <br><br><button class="button" style="float: right" onclick="return processar('receberTabela')"
+            onclick=" return processarHistoricoReceber('historico')">Adicionar
+            conta </button></a>
     </div>
+    </p>
+  </div>
   </div>
 
   <div id="Pagar" class="conteudoTab">
@@ -209,29 +197,39 @@
         <h1>A pagar</h1>
       </font>
       <table style="margin: auto">
-        <tr style="background-color: #b1b1b1">
-          <th>Data</th>
-          <th>Pagador</th>
-          <th>Descrição</th>
-          <th>Valor</th>
-        </tr>
-        <tr style="background-color: #efefef">
-          <td>05/08/19</td>
-          <td>Salário</td>
-          <td>Salário</td>
-          <td>R$ 2.000,00</td>
-        </tr>
-        <tr style="background-color: #efefef">
-          <td>05/08/19</td>
-          <td>aluguel apartamento</td>
-          <td>apartamento do centro</td>
-          <td>R$ 1.200,00</td>
-        </tr>
+        <tbody id="pagarTabela">
+          <tr id="tabCabecalho">
+            <th style="background-color: #b1b1b1">Data</th>
+            <th style="background-color: #b1b1b1">Nome</th>
+            <th style="background-color: #b1b1b1">Descrição</th>
+            <th style="background-color: #b1b1b1">Valor R$</th>
+          <tr style="background-color: #efefef">
+            <td>2019-07-03</td>
+            <td>energia</td>
+            <td>conta de energia elétrica</td>
+            <td class="total">150.00</td>
+          </tr>
+          <tr style="background-color: #efefef">
+            <td>2019-07-03</td>
+            <td>internet</td>
+            <td>conta da internet</td>
+            <td class="total">120.00</td>
+          </tr>
+        </tbody>
       </table>
       <p class="link" style="color:#000">
-        <a href="#"><button class="button" style="float: right">Adicionar conta a pagar </button></a>
-      </p>
+        <div id="divtab">
+          <b>Data:</b> <input type="date" class="txtpagar" name="data1">
+          Conta: <input type="text" class="txtpagar" name="nome1">
+          Descrição: <input type="text" class="txtpagar" name="descricao1">
+          Valor: <input type="number" class="txtpagar" name="valor1" id="valor1">
+          <a href="#">
+            <br><br><button class="button" style="float: right" onclick="return processar1('pagarTabela')">Adicionar
+              conta </button></a>
+        </div>
     </div>
+    </p>
+  </div>
   </div>
   <!--
       <div class="cabecalho">
@@ -270,7 +268,12 @@
     var saldofinal = parseFloat(document.getElementById("saldo").textContent);
     function adicionaSaldo() {
       var saldo = parseFloat(prompt("Quanto de saldo deseja adicionar? "));
-      document.getElementById("saldo").innerHTML = ("<h1>R$ " + saldo + "</h1>");
+      if(saldo){
+        document.getElementById("saldo").innerHTML = ("<h1>R$ " + saldo + "</h1>");
+      }else{
+        document.getElementById("saldo").innerHTML = ("<h1>R$ 0,00</h1>");
+      }
+      
     }
     var d = document;
     function processar(receberTabela) {
@@ -282,6 +285,45 @@
       d.getElementById(receberTabela).appendChild(newRow);
       return false;
     }
+    var d1 = document;
+    function processar1(pagarTabela) {
+      var newRow = d1.createElement('tr');
+      newRow.insertCell(0).innerHTML = d1.getElementsByName('data1')[0].value;
+      newRow.insertCell(1).innerHTML = d1.getElementsByName('nome1')[0].value;
+      newRow.insertCell(2).innerHTML = d1.getElementsByName('descricao1')[0].value;
+      newRow.insertCell(3).innerHTML = d1.getElementsByName('valor1')[0].value;
+      d1.getElementById(pagarTabela).appendChild(newRow);
+      return false;
+    }
+    var d3 = document;
+    function processarHistoricoPagar(historico) {
+      var newRow = d3.createElement('tr');
+      newRow.insertCell(0).innerHTML = d3.getElementsByName('data1')[0].value;
+      newRow.insertCell(1).innerHTML = d3.getElementsByName('nome1')[0].value;
+      newRow.insertCell(2).innerHTML = "A Pagar";
+      newRow.insertCell(3).innerHTML = d3.getElementsByName('descricao1')[0].value;
+      newRow.insertCell(4).innerHTML = d3.getElementsByName('valor1')[0].value;
+
+      d3.getElementById(historico).appendChild(newRow);
+      return false;
+    }
+    var d4 = document;
+    function processarHistoricoReceber(historico) {
+      var newRow = d4.createElement('tr');
+      newRow.insertCell(0).innerHTML = d4.getElementsByName('data')[0].value;
+      newRow.insertCell(1).innerHTML = d4.getElementsByName('nome')[0].value;
+      newRow.insertCell(2).innerHTML = "A Receber";
+      newRow.insertCell(3).innerHTML = d4.getElementsByName('descricao')[0].value;
+      newRow.insertCell(4).innerHTML = d4.getElementsByName('valor')[0].value;
+
+      d4.getElementById(historico).appendChild(newRow);
+      return false;
+    }
+    var els = document.getElementsByClassName("total1");
+    var valorcalculado = 0;
+    [].forEach.call(els, function (el) {
+      valorcalculado += parseFloat(el.innerHTML);
+    });
   </script>
 </body>
 

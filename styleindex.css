@@ -229,8 +229,9 @@ td, th {
 * {box-sizing:border-box}
 .container {
   width: 80%; 
-  background-color: #cfd; 
+  background-color: #dfdfdf; 
   margin-left: 10%;
+ 
 }
 
 .skills {
@@ -240,10 +241,10 @@ td, th {
   color: #333;
 }
 
-.diversos {width: 30%; background-color: rgb(236, 236, 236);} /* Green */
-.medico {width: 15%; background-color: rgb(197, 197, 197);} /* Blue */
+.diversos {width: 30%; background-color: rgb(103, 105, 243);} /* Green */
+.medico {width: 15%; background-color: rgb(25, 214, 82);} /* Blue */
 .aluguel {width: 35%; background-color: rgb(156, 156, 156);} /* Green */
-.transporte {width: 10%; background-color: rgb(122, 122, 122);} /* Blue */
+.transporte {width: 10%; background-color: rgb(197, 56, 56);} /* Blue */
 
 img{
   width: auto;
@@ -268,6 +269,47 @@ text-align: center;
 h1{
   color: #000000;
 }
-tbody{
-  
+#tabCabecalho{
+  background-color: #b1b1b1;
+  align-items: center;
+}
+tr{
+  background-color: #efefef;
+  text-align: center;
+}
+#divtab{
+  color: #000000;
+}
+input[type=text]{   
+  border-radius:12px;
+  box-shadow: 1px 1px 2px #00c;    
+  -moz-box-shadow: 1px 1px 2px #333333;
+  -webkit-box-shadow: 1px 1px 2px #333333;
+  background: #fff; 
+  border:2px solid #fff;
+  height: 35px;
+}
+input[type=date]{   
+  border-radius:12px;
+  box-shadow: 1px 1px 2px #00c;    
+  -moz-box-shadow: 1px 1px 2px #333333;
+  -webkit-box-shadow: 1px 1px 2px #333333;
+  background: #fff; 
+  border:2px solid #fff;
+  height: 35px;
+}
+input[type=number]{   
+  border-radius:12px;
+  box-shadow: 1px 1px 2px #00c;    
+  -moz-box-shadow: 1px 1px 2px #333333;
+  -webkit-box-shadow: 1px 1px 2px #333333;
+  background: #fff; 
+  border:2px solid #fff;
+  height: 35px;
+}
+#sair{
+  border-radius: 12px;
+  position: absolute;
+   right: 2%;
+   bottom: 20px;
 }
