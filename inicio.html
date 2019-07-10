@@ -19,135 +19,144 @@
   </div>
 
   <div id="Lancamentos" class="conteudoTab">
-            
-            <div id="alerta1" class="Alertas">
-              <font size="3" color="#2b2b2b"><h1>Saldo Geral</h1></font> 
-            <p class="link" style="color:#000">  
-              <font size="6" face="arial"><b>R$ 0,00<b></font> <br><br>
-              <a href="#"><button class="button">Adicionar saldo</button></a>
-              <a href="#"><button class="button">Subtrair saldo</button></a>
-            </p>
-          </div>
-    
-          
-          <div id="alerta2" class="Alertas">
-              <font size="4"color="#2b2b2b"><h1>Gastos</h1></font> 
-            <p class="link" style="color:#000">  
-              <div class="container">
-                <div class="skills diversos">Diversos</div>
-              </div>
-              <div class="container">
-                <div class="skills aluguel">Aluguel</div>
-              </div>
-              <div class="container">
-                <div class="skills medico">Médico</div>
-              </div>
-              <div class="container">
-                <div class="skills transporte">Transporte</div>
-              </div>
-          </div>
-    
-          
-        <div id="alerta3" class="Alertas">
-            <font size="3" color="#2b2b2b"><h1>A pagar</h1></font> 
-            <table style="margin: auto">
-              <tr style="background-color: #b1b1b1">
-                <th>Data</th>
-                <th>Beneficiado</th>
-                <th>Descrição</th>
-                <th>Valor</th>
-              </tr>
-              <tr style="background-color: #efefef">
-                <td>05/08/19</td>
-                <td>Aluguel</td>
-                <td>Aluguel do apartamento!</td>
-                <td>R$ 950.00</td>
-              </tr>
-            </table>
-          <p class="link">  
-            <a href="#"><button class="button">Ir para "A pagar" </button></a>
-          </p>
+
+    <div id="alerta1" class="Alertas">
+      <font size="3" color="#2b2b2b">
+        <h1>Saldo Geral</h1>
+      </font>
+      <p class="saldogeral" style="color:#000">
+        <font size="6" face="arial"><p id="saldo"><bold>R$ 0,00</bold></p></font> <br><br>
+        <a><button class="button" onclick="adicionaSaldo()">Adicionar saldo</button></a>
+        <a href="#"><button class="button">Subtrair saldo</button></a>
+      </p>
+    </div>
+    <div id="alerta2" class="Alertas">
+      <font size="4" color="#2b2b2b">
+        <h1>Gastos</h1>
+      </font>
+      <p class="link" style="color:#000">
+        <div class="container">
+          <div class="skills diversos">Diversos</div>
         </div>
-    
-        
-        <div id="alerta4" class="Alertas">
-            <font size="3" color="#2b2b2b"><h1>A receber</h1></font> 
-            <table style="margin: auto">
-              <tr style="background-color: #b1b1b1">
-                <th>Data</th>
-                <th>Pagador</th>
-                <th>Descrição</th>
-                <th>Valor</th>
-              </tr>
-              <tr style="background-color: #efefef">
-                <td>05/08/19</td>
-                <td>Salário</td>
-                <td>Salário</td>
-                <td>R$ 2.000,00</td>
-              </tr>
-            </table>
-          <p class="link" style="color:#000">  
-            <a href="#"><button class="button">Ir para "A receber" </button></a>
-          </p>
+        <div class="container">
+          <div class="skills aluguel">Aluguel</div>
         </div>
+        <div class="container">
+          <div class="skills medico">Médico</div>
+        </div>
+        <div class="container">
+          <div class="skills transporte">Transporte</div>
+        </div>
+    </div>
+
+    <div id="alerta3" class="Alertas">
+      <font size="3" color="#2b2b2b">
+        <h1>A pagar</h1>
+      </font>
+      <table style="margin: auto">
+        <tr style="background-color: #b1b1b1">
+          <th>Data</th>
+          <th>Beneficiado</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+        </tr>
+        <tr style="background-color: #efefef">
+          <td>05/08/19</td>
+          <td>Aluguel</td>
+          <td>Aluguel do apartamento!</td>
+          <td>R$ 950.00</td>
+        </tr>
+      </table>
+      <p class="link">
+        <a href="#"><button class="button">Ir para "A pagar" </button></a>
+      </p>
+    </div>
+
+
+    <div id="alerta4" class="Alertas">
+      <font size="3" color="#2b2b2b">
+        <h1>A receber</h1>
+      </font>
+      <table style="margin: auto">
+        <tr style="background-color: #b1b1b1">
+          <th>Data</th>
+          <th>Pagador</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+        </tr>
+        <tr style="background-color: #efefef">
+          <td>05/08/19</td>
+          <td>Salário</td>
+          <td>Salário</td>
+          <td>R$ 2.000,00</td>
+        </tr>
+      </table>
+      <p class="link" style="color:#000">
+        <a href="#"><button class="button">Ir para "A receber" </button></a>
+      </p>
+    </div>
   </div>
 
   <div id="Relatorio" class="conteudoTab">
-      <div id="areceber" class="tabelas">
-          <font size="3" color="#2b2b2b"><h1>A receber</h1></font> 
-          <table style="margin: auto">
-            <tr style="background-color: #b1b1b1">
-              <th>Data</th>
-              <th>Pagador</th>
-              <th>Descrição</th>
-              <th>Valor</th>
-            </tr>
-            <tr style="background-color: #efefef">
-              <td>05/08/19</td>
-              <td>Salário</td>
-              <td>Salário</td>
-              <td>R$ 2.000,00</td>
-            </tr>
-            <tr style="background-color: #efefef">
-              <td>05/08/19</td>
-              <td>aluguel apartamento</td>
-              <td>apartamento do centro</td>
-              <td>R$ 1.200,00</td>
-            </tr>
-          </table>
-        <p class="link" style="color:#000">  
-          <a href="#"><button class="button" style="float: right">Adicionar crédito a receber </button></a>
-        </p>
-      </div>
+    <div id="areceber" class="tabelas">
+      <font size="3" color="#2b2b2b">
+        <h1>A receber</h1>
+      </font>
+      <table style="margin: auto">
+        <tr style="background-color: #b1b1b1">
+          <th>Data</th>
+          <th>Pagador</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+        </tr>
+        <tr style="background-color: #efefef">
+          <td>05/08/19</td>
+          <td>Salário</td>
+          <td>Salário</td>
+          <td>R$ 2.000,00</td>
+        </tr>
+        <tr style="background-color: #efefef">
+          <td>05/08/19</td>
+          <td>aluguel apartamento</td>
+          <td>apartamento do centro</td>
+          <td>R$ 1.200,00</td>
+        </tr>
+      </table>
+      <p class="link" style="color:#000">
+        <a href="#"><button class="button" style="float: right">Adicionar crédito a receber </button></a>
+      </p>
+    </div>
   </div>
 
   <div id="Metas" class="conteudoTab">
-      <div id="apagar" class="tabelas">
-          <font size="3" color="#2b2b2b"><h1>A pagar</h1></font> 
-          <table style="margin: auto">
-            <tr style="background-color: #b1b1b1">
-              <th>Data</th>
-              <th>Pagador</th>
-              <th>Descrição</th>
-              <th>Valor</th>
-            </tr>
-            <tr style="background-color: #efefef">
-              <td>05/08/19</td>
-              <td>Salário</td>
-              <td>Salário</td>
-              <td>R$ 2.000,00</td>
-            </tr>
-            <tr style="background-color: #efefef">
-              <td>05/08/19</td>
-              <td>aluguel apartamento</td>
-              <td>apartamento do centro</td>
-              <td>R$ 1.200,00</td>
-            </tr>
-          </table>
-        <p class="link" style="color:#000">  
-          <a href="#"><button class="button" style="float: right">Adicionar conta a pagar </button></a>
-        </p>
-      </div>
+    <div id="apagar" class="tabelas">
+      <font size="3" color="#2b2b2b">
+        <h1>A pagar</h1>
+      </font>
+      <table style="margin: auto">
+        <tr style="background-color: #b1b1b1">
+          <th>Data</th>
+          <th>Pagador</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+        </tr>
+        <tr style="background-color: #efefef">
+          <td>05/08/19</td>
+          <td>Salário</td>
+          <td>Salário</td>
+          <td>R$ 2.000,00</td>
+        </tr>
+        <tr style="background-color: #efefef">
+          <td>05/08/19</td>
+          <td>aluguel apartamento</td>
+          <td>apartamento do centro</td>
+          <td>R$ 1.200,00</td>
+        </tr>
+      </table>
+      <p class="link" style="color:#000">
+        <a href="#"><button class="button" style="float: right">Adicionar conta a pagar </button></a>
+      </p>
+    </div>
   </div>
   <!--
       <div class="cabecalho">
@@ -182,6 +191,13 @@
 
     // Pega o elemento com id="padraoAberto" e simula um click
     document.getElementById("padraoAberto").click();
+
+
+    function adicionaSaldo(saldo) {
+      var saldo = parseInt(prompt("Quanto de saldo deseja adicionar?"));
+      var saldototal =+ saldo;
+      document.getElementById("saldo").innerHTML = ("R$"+saldototal+",00");
+    }
   </script>
 </body>
 
