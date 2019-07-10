@@ -202,11 +202,19 @@ img{
   margin-left:3%;
   margin-top:1%;
   position:absolute;
+  padding: 100px;
  }
  #apagar {
   margin-left:3%;
   margin-top:1%;
   position:absolute;
+  padding: 100px;
+ }
+ #historico {
+  margin-left:3%;
+  margin-top:1%;
+  position:absolute;
+  padding: 100px;
  }
 
 table {
@@ -221,7 +229,8 @@ td, th {
 * {box-sizing:border-box}
 .container {
   width: 80%; 
-  background-color: #ddd; 
+  background-color: #cfd; 
+  margin-left: 10%;
 }
 
 .skills {
@@ -231,10 +240,10 @@ td, th {
   color: #333;
 }
 
-.diversos {width: 30%; background-color: #4CAF50;} 
-.medico {width: 15%; background-color: #4CAF50;} 
-.aluguel {width: 35%; background-color: #2196F3;} 
-.transporte {width: 10%; background-color: #2196F3;} 
+.diversos {width: 30%; background-color: rgb(236, 236, 236);} /* Green */
+.medico {width: 15%; background-color: rgb(197, 197, 197);} /* Blue */
+.aluguel {width: 35%; background-color: rgb(156, 156, 156);} /* Green */
+.transporte {width: 10%; background-color: rgb(122, 122, 122);} /* Blue */
 
 img{
   width: auto;
